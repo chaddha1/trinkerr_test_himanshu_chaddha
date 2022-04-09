@@ -1,8 +1,10 @@
 let num1 = 13;
-let num2 = 131;
+let num2 = 28;
 let num3 = 2;
 
 function checkSpecial(num){
+    if(num < 10) return -1;
+    
     let numArr = breakNumber(num);
     let p1 = 0, p2 = numArr.length;
     let newNum = 0; let count = 0;
@@ -33,4 +35,6 @@ function breakNumber(num){
     return result;
 }
 
-checkSpecial(num3);
+checkSpecial(num1);
+// checkSpecial(num2);
+// checkSpecial(num3);
